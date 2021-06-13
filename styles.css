@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  background: black;
+  color: white;
+}
+
+.doingwhat {
+  display: flex;
+  justify-content: center;
+  background: blueviolet;
+}
+.nav-container {
+  display: flex;
+  border: white 2px solid;
+  justify-content: space-around;
+}
+
+.nav-menu {
+  margin: 2rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-menu > a {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  border: white 3px solid;
+  padding: 20px;
+  margin: 10px;
+}
+
+.nav-logo {
+  margin: 1rem;
+}
+
+.thisis {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  border: cornflowerblue 2px solid;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+.content1,
+.content2 {
+  border: olive 1px solid;
+  row-gap: 2rem;
+  padding: 20px;
+  margin: 10px;
+}
+
+.last-container {
+  display: flex;
+  border: red 2px double;
+  justify-content: space-between;
+  width: auto;
+}
+
+.child1 {
+  order: 0;
+}
+.child1,
+.child2 {
+  flex: 4;
+}
+.child2 {
+  order: 2;
+}
+.child3 {
+  flex: 2;
+  order: 1;
+}
+
+.child {
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  border: white 1px solid;
+  padding: 40px;
+  margin: 10px;
+}
+
+.doingwhat2 {
+  display: grid;
+  background: coral;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 100px);
+  gap: 10px 10px;
+  border: 2px solid green;
+  margin: 100px auto;
+  width: 900px;
+}
+
+.child-grid {
+  color: indianred;
+  background: white;
+  font-weight: border;
+  text-align: center;
+  margin: 5px;
+  padding: 40px;
+}
+
+.child-grid-1 {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  text-align: cent;
+}
+.child-grid-2 {
+  grid-column: 2/6;
+}
+.child-grid-3 {
+  grid-column: 2/4;
+}
+.child-grid-4 {
+  grid-column: 4/6;
+}
+
+.child-grid-7 {
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+.child-grid-8 {
+  grid-column: 5/6;
+  grid-row: 3/5;
+}
+
+.child-grid-11 {
+  grid-column: 1/6;
+}
+
+.grid-container2 {
+  display: grid;
+
+  margin: 50px auto;
+  width: 700;
+  height: 730px;
+  border: yellowgreen 2px solid;
+  grid-template:
+    "myheader     myheader   myheader     myheader" 8rem
+    "mymain       mycontent    mycontent   myaside" 30rem
+    "myfooter     myfooter   myfooter     myfooter" 0.5rem
+    / 0.5fr 1.5fr 0.5fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 0.5fr; */
+}
+
+.child-grid-second {
+  color: indianred;
+  background: white;
+  font-weight: border;
+  text-align: center;
+  margin: 5px;
+  padding: 40px;
+}
+
+.child-grid-1-2 {
+  grid-area: myheader;
+}
+.child-grid-2-2 {
+  grid-area: mymain;
+  background: blueviolet;
+}
+.child-grid-3-2 {
+  grid-area: myaside;
+  background: blue;
+}
+.child-grid-4-2 {
+  grid-area: myfooter;
+  background: red;
+}
+.child-grid-content {
+  grid-area: mycontent;
+  background: purple;
+}
